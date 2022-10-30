@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title> Mes Competences</title>
+    <link rel="stylesheet" href="competence.css">
+</head>
+
+<body>
+    <section class="page">
+        
+        <!--Barre de navigation-->
+          <nav>
+            <div class="onglets">
+                <a href="..\Porte-Folio Html\Porte-folio.html"> Page d'accueil</a>
+                <a href="..\Mes Creations\creation.html">Mes Creations</a>
+                <a href="..\Mes Passions\passions.html">Mes Passions</a>
+            </div>
+
+            <div class="buttons">
+                <button class="Login"> Connectez-vous</button>
+                <button class="Register">Enregistrez-vous</button>
+          </nav>
+        <!-- Fin de la Barre de navigation-->
+
+         <!--L'en tête-->
+        <header>
+            <div class="ouvertureSite">
+                <div class="texteIntro">
+                  <p class="nomPrenom">Antoine Buchaillat</p>
+                  <div class="wrapper">
+                    <div class="effect">
+                      <div class="image">
+                        <img id="chapeauDiplome" src="https://imagizer.imageshack.com/img922/5822/as2kYy.png" alt="chapeauDiplome">
+                      </div>
+                    </div>
+                    <div class="typewriterContainer">
+                      <div class="typewriter">
+                        <p> Efap bac+2</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button onClick="handleReplay()">Replay</button>
+        </header>
+        <!--Fin de L'en tête--> 
+
+        <!--Body-->
+        <body1>
+            <h1>
+                <div class="skill">
+                    <h1> Mes Competences</h1>
+                
+                    <li><h3>Maîtrise d'Adobe</h3>
+                        <span class="bar"><span class="html"></span></span>
+                    </li>
+                
+                    <li><h3>Maîtrise d'Html/ Css/ blender</h3>
+                        <span class="bar"><span class="css"></span></span>
+                    </li>
+                
+                    <li><h3>Maîtrise Rédactionnelle</h3>
+                        <span class="bar"><span class="php"></span></span>
+                    </li>
+                
+                    <li><h3>Maîtrise des Réseaux</h3>
+                        <span class="bar"><span class="javascript"></span></span>
+                    </li>
+                </div>
+            </h1>
+        </body1>
+        <!--Body--> 
+    </section>
+</section>
+
+<footer> 
+  <!-- ====== FORM START ====== -->
+  <form action="" class="contact-form" id="contact-form">
+   <input type="text" placeholder="Your Name" class="name" required>
+   <input type="email" name="" id="" placeholder="Email adress..." class="email" required>
+   <textarea name="" id="" cols="30" rows="10" placeholder="Write message here..." class="message" required></textarea>
+   <input type="submit" value="Send" class="send-btn">
+</form>
+<!-- ====== FORM END ====== -->
+   
+   
+   <!-- ====== LINK EMAIL JS ====== -->
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm@emailjs/browser@3/dist/email.min.js"></script>
+   <!-- ====== LINK SWEET ALERT JS ====== -->
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   <script type="text/javascript">
+       (function() {
+       emailjs.init("@efap.com");
+       })();
+       </script>
+   <!-- ====== LINK SWIPER JS ====== -->
+   <script src="./js/swiper-bundle.min.js"></script>
+   <!-- ====== LINK TO JS ====== -->
+   <script src="..\Mes Creations\sites\creation.js"></script>
+</footer>
+</html>

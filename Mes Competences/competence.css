@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #141414;
+    padding: 0;
+    margin:0;
+    color: #fff;
+}
+body.page{
+    margin: 20px 80px;
+}
+
+/* Barre de Navigation 1er page*/
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    background-color: #141414;
+    padding: 10px 0px;
+}
+
+nav .onglets{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+nav .onglets a{
+    color: #fff; 
+    text-decoration: none;
+    margin-right: 20px;   
+     cursor: pointer;
+} 
+
+nav .buttons button{
+    padding: 13px 20px;
+    color: #fff;
+    border: none;
+    background-color: rgb(122, 18, 5);
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+}
+/* Fin de la barre de Navigation*/
+
+/*header*/
+  
+button {
+    color: #fff;
+    background-color: rgb(122, 18, 5);
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .ouvertureSite {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 5vw;
+  }
+  
+  .wrapper {
+      position: relative;
+      background-color: rgb(34, 119, 34);
+      margin-top: 1.6vw;
+  }
+  
+  .image {
+      animation: icone 1.31s .6s linear forwards;
+      animation-iteration-count: 1;
+      animation-delay: 1s;
+      width: 3vw;
+      height: 4.5vw;
+      opacity: 0;
+  }
+  
+  .effect {
+      height: 5vw;
+      width: 26vw;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  
+  #chapeauDiplome {
+      width: 4vw;
+  }
+  
+  .texteIntro {
+      color: rgb(171, 73, 73);
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  }
+  
+  .nomPrenom {
+      font-size: 3vw;
+      letter-spacing: 0.5vw;
+      font-family: 'Rampart One', cursive;
+      animation: fondu 0.5s linear forwards;
+      animation-delay: 1s;
+      animation-iteration-count: 1;
+      opacity: 0;
+  }
+  
+  .typewriterContainer {
+      display: flex;
+      justify-content: flex-start;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -70%);
+      z-index: -1;
+  }
+  
+  .typewriter {
+      font-size: 2vw;
+      font-weight: lighter;
+      font-family: 'Share Tech Mono', monospace;
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+      animation: typing 1.7s .8s steps(16) forwards;
+      animation-delay: 1s;
+      opacity: 0;
+      margin-right: 4vw;
+  }
+  
+  @keyframes icone {
+      0% {
+          opacity: 0%;
+          transform: translateX(3vw) rotate(0deg);
+      }
+  
+      10% {
+          opacity: 100%;
+      }
+  
+      50% {
+  
+          transform: translateX(10.5vw) rotate(180deg);
+      }
+  
+      90% {
+          opacity: 100%;
+      }
+  
+      100% {
+          opacity: 100%;
+          transform: translateX(18vw) rotate(360deg);
+      }
+  }
+  
+  @keyframes typing {
+      0% {
+          width: 0;
+          opacity: 1;
+      }
+  
+      1% {
+          opacity: 1;
+      }
+  
+      100% {
+          width: 100%;
+          opacity: 1;
+      }
+  
+  }
+  
+  @keyframes fondu {
+      from {
+          opacity: 0%;
+      }
+      to {
+          opacity: 100%;
+      }
+  }
+/*fin du header/
+
+/* Début du Body*/
+.page header{
+    margin-top: 40px;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+header h1{
+    text-align: center;
+    font-size: 60px;
+    padding:150px;
+}
+h1{
+    text-align: center;   
+}
+h3{
+    margin: 5px;  
+}
+.skill{
+    width: 500px;
+    margin: 60px auto;
+    color:aliceblue;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgb(251, 163, 87); border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25 ), 0 10px 10px rgba(0, 0, 0, 0.22 )
+}
+.skill li{
+  margin: 20px 0;
+  padding: 10px;
+}
+.bar{
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 1.0);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24 );
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22 );
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100%);
+}
+.html{
+   width: 80%;
+   animation: html 3s;
+}
+.css{
+    width: 50%;
+    animation: css 3s;
+ }
+ .php {
+    width: 45%;
+    animation: php 3s;
+ }
+ .javascript{
+    width: 75%;
+    animation: javascript 3s;
+ }
+ @keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+ }
+ @keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+ }
+ @keyframes php{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 45%;
+    }
+ }
+ @keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+ }
+/* Fin du Body*/
+
+/* Pied de Page*/
+footer{
+    background-color: #1a1a1a;
+    padding: 25px 100px;
+    color: rgb(235, 157, 73);
+    cursor: pointer;
+}
+
+footer .colonnes{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+/* Fin du Pied de Page*/
+
+@media screen and (max-widht: 640px){
+    body .page{
+        margin: 10px;
+    }
+
+    nav .onglets{
+        display: none;
+    }
+
+    header{
+        margin-top: 20px;
+        background-size: 250px 250px;
+    }
+
+    header .h1{
+        font-size: 30px;
+        padding: 100px;
+    }
+    
+}
+
+
+/* ====== CONTACT FORM ====== */
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    row-gap: 1rem;
+}
+.contact-form input,.contact-form textarea {
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    padding: 15px;
+    color: var(--bg-color);
+    background: var(--box-color);
+    border-radius: 0.4rem;
+}
+.contact-form .send-btn {
+    width: 120px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 12px;
+    background: var(--main-color);
+    cursor: pointer;
+}
+.contact-form .send-btn:hover {
+    background: #b9bbc2;
+    transition: 0.3s all linear;
+}
+

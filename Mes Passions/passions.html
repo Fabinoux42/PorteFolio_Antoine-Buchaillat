@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title> Mes Passions </title>
+    <link rel="stylesheet" href="passion.css">
+</head>
+
+<body>
+    <section class="page">
+        <!--Barre de navigation-->
+          <nav>
+            <div class="onglets">
+                <a href="../Mes Competences\competence.html">Mes Competences</a>
+                <a href="../Mes Creations\creation.html">Mes Creations</a>
+                <a href="../Porte-Folio Html\Porte-folio.html">Page d'accueil</a>
+            </div>
+
+            <div class="buttons">
+                <button class="Login">Connectez-vous</button>
+                <button class="Register">Enregistrez-vous</button>
+            </div>
+          </nav>
+        <!-- Fin de la Barre de navigation-->
+
+        <!--L'en tête-->
+        <header>
+            <h1>Mes Passions</h1>
+        </header>
+        <!--Fin de L'en tête--> 
+    </section>
+
+    <section class="main principal">
+
+     <!--Body-->
+        <div class="content">
+            <div class="card">
+                <div class="left">
+                  <h1>Le Basket</h1>
+                  <p>J'aime jouer au basket (malgré mon niveau). En effet, jouer au basket m'as appporté de l'agilité et de l'esprit d'équipe</p>
+                </div >
+
+                <div class="right">
+                    <img src="img/food.jpg" alt="">
+                </div>
+            </div>  
+
+            <div class="card">
+                <div class="left">
+                  <h1>La Photographie</h1>
+                  <p>J'aime la photographie pour sa manière de capturer un instant de vie pour le rendre intemporelle</p>
+                </div >
+
+                <div class="right">
+                    <img src="../Mes Creations\illustrations\img\img 15.jpg" alt="">
+                </div>
+            </div>  
+
+            <div class="card">
+                <div class="left">
+                  <h1>La Musique</h1>
+                  <p>J'aime la musique. Je suis conscient que la musique est un "plaisir universel" donc j'assume de dire que moi aussi j'aime la musique. Alors, Pourquoi ? J'aime la musique parce que une musique est un moyen de communication, à travers des notes nous ressentons tous quelque chose (que cela soit conscient ou non). La musique se manifeste en nous, sous différentes formes, elle peut se faire Thérapeutique; professeur ou souvenirs. C'est cette effet que je cherche à retranscrire à travers ma manière de créer mes projets.</p>
+                </div >
+
+                <div class="right">
+                    <img src="../Mes Creations\illustrations\img\img 14.jpg" alt="">
+                </div>
+            </div>  
+        </div>
+         
+     <!--Body--> 
+    </section>
+</body>
+    
+<footer> 
+    <!-- ====== FORM START ====== -->
+    <form action="" class="contact-form" id="contact-form">
+     <input type="text" placeholder="Your Name" class="name" required>
+     <input type="email" name="" id="" placeholder="Email adress..." class="email" required>
+     <textarea name="" id="" cols="30" rows="10" placeholder="Write message here..." class="message" required></textarea>
+     <input type="submit" value="Send" class="send-btn">
+ </form>
+ <!-- ====== FORM END ====== -->
+     
+     
+     <!-- ====== LINK EMAIL JS ====== -->
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm@emailjs/browser@3/dist/email.min.js"></script>
+     <!-- ====== LINK SWEET ALERT JS ====== -->
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     <script type="text/javascript">
+         (function() {
+         emailjs.init("@efap.com");
+         })();
+         </script>
+     <!-- ====== LINK SWIPER JS ====== -->
+     <script src="./js/swiper-bundle.min.js"></script>
+     <!-- ====== LINK TO JS ====== -->
+     <script src="../Mes Creations\creation.js"></script>
+ </footer>
+</html>
+

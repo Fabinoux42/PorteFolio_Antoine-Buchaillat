@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Mes Magazines</title>
+    <link rel="stylesheet" href="magazines.css">
+</head>
+
+<body>
+    <section class="page">
+        <!--Barre de navigation-->
+          <nav>
+            <div class="onglets">
+               <a href="..\..\Mes Competences\competence.html"> Mes Competences</a>
+               <a href="..\..\Porte-Folio Html\Porte-folio.html">Page d'accueil</a>
+                <a href="..\..\Mes Passions\passions.html">Mes Passions</a>
+            </div>
+
+            <div class="buttons">
+                <button class="Login">Connectez-vous</button>
+                <button class="Register">Enregistrez-vous</button>
+            </div>
+          </nav>
+        <!-- Fin de la Barre de navigation-->
+
+        <!--L'en tête-->
+        <header>
+            <h1>Mes Magazines</h1>
+        </header>
+        <!--Fin de L'en tête--> 
+    </section>
+
+    <section class="class">
+   <!--Body-->
+   <body>
+    <div class="wrapper">
+        <div class="text">
+            <h4>Mes magazines</h4>
+            <p>Survolez un magazine pour voir sa couleur</p>
+        </div>
+
+        <div class="images">
+            <img src="img/Couverture Cinoche.png">
+            <img src="..\illustrations\img\img 19.jpg">
+            <img src="img/magazine Mili'web.jpg">
+            <img src="img/Salti couverture.png">
+        </div>
+    </div>
+    <script type="text/javascript"> src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"</script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $(".images img").click(function() {
+                $(this).addClass("zoom");
+            });  
+
+            $(".images img").click(function(){ 
+               $(this).removeClass("zoom")
+            })
+        })
+    </script>
+   </body>
+
+    <!--Fin de Body-->
+    </section>
+</body>
+</html>

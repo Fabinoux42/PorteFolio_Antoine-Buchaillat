@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #141414;
+    padding: 0;
+    margin:0;
+    color: #fff;
+}
+body.page{
+    margin: 20px 80px;
+}
+
+/* Barre de Navigation 1er page*/
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    background-color: #141414;
+    padding: 10px 0px;
+}
+
+nav .onglets{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+nav .onglets a{
+    color: #fff; 
+    text-decoration: none;
+    margin-right: 20px;   
+     cursor: pointer;
+} 
+
+nav .buttons button{
+    padding: 13px 20px;
+    color: #fff;
+    border: none;
+    background-color: rgb(122, 18, 5);
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+}
+/* Fin de la barre de Navigation*/
+
+/* Début de L'en tête*/
+.page header{
+    margin-top: 40px;
+    background: url('https://wallpapercave.com/wp/wp7896626.jpg');
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+header h1{
+    text-align: center;
+    font-size: 60px;
+    padding:150px;
+}
+/* Fin de L'en tête*/
+
+/* Pied de Page*/
+footer{
+    background-color: #1a1a1a;
+    padding: 25px 100px;
+    color: rgb(235, 157, 73);
+    cursor: pointer;
+}
+
+footer .colonnes{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+/* Fin du Pied de Page*/
+
+@media screen and (max-widht: 640px){
+    body .page{
+        margin: 10px;
+    }
+
+    nav .onglets{
+        display: none;
+    }
+
+    header{
+        margin-top: 20px;
+        background-size: 250px 250px;
+    }
+
+    header .h1{
+        font-size: 30px;
+        padding: 100px;
+    }
+    
+}

@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #3e3e3e;
+    padding: 0;
+    margin:0;
+    color: #fff;
+}
+body.page{
+    margin: 20px 80px;
+}
+
+/* Barre de Navigation 1er page*/
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    background-color: #141414;
+    padding: 10px 0px;
+}
+
+nav .onglets{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+nav .onglets a{
+    color: #fff; 
+    text-decoration: none;
+    margin-right: 20px;   
+     cursor: pointer;
+} 
+
+nav .buttons button{
+    padding: 13px 20px;
+    color: #fff;
+    border: none;
+    background-color: rgb(122, 18, 5);
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+}
+/* Fin de la barre de Navigation*/
+
+/* Début de L'en tête*/
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:url('img/Bannière\ blog.jpg');
+    background-size: 20px;
+    color:#fff;
+    padding: 40px;
+}
+
+header h1{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 50px;
+}
+
+header button{
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #141414;
+    border: none;
+    font-size: 15px;
+    font-family: 'Playfair Display', sans-serif;
+    outline: none;
+    cursor: pointer;
+}
+/* Fin de L'en tête*/
+
+/* Début du Body*/
+.main{
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .content .card{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-bottom: 20px;
+}
+
+.main .content .card .left{
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color:#141414;
+    color:#fff;
+}
+
+.main .content .card.right{
+    flex: 0 0 70%;
+}
+
+.main .content .card .right img{
+    flex: 0 0 70%;
+    height: 300px;   
+    margin-top: 5px;
+}
+/* Fin du Body*/
+
+/* Pied de Page*/
+footer{
+    background-color: #1a1a1a;
+    padding: 25px 100px;
+    color: rgb(235, 157, 73);
+    cursor: pointer;
+}
+
+footer .colonnes{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+
+/* ====== CONTACT FORM ====== */
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    row-gap: 1rem;
+}
+.contact-form input,.contact-form textarea {
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    padding: 15px;
+    color: var(--bg-color);
+    background: var(--box-color);
+    border-radius: 0.4rem;
+}
+.contact-form .send-btn {
+    width: 120px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 12px;
+    background: var(--main-color);
+    cursor: pointer;
+}
+.contact-form .send-btn:hover {
+    background: #b9bbc2;
+    transition: 0.3s all linear;
+}
+

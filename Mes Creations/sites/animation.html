@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Mes Travaux Pratiques</title>
+    <link rel="stylesheet" href="animation.css">
+</head>
+
+<body>
+    <section class="page">
+        <!--Barre de navigation-->
+          <nav>
+            <div class="onglets">
+               <a href="..\..\Mes Competences\competence.html"> Mes Competences</a>
+               <a href="..\..\Porte-Folio Html\Porte-folio.html">Page d'accueil</a>
+                <a href="..\..\Mes Passions\passions.html">Mes Passions</a>
+            </div>
+
+            <div class="buttons">
+                <button class="Login">Connectez-vous</button>
+                <button class="Register">Enregistrez-vous</button>
+            </div>
+          </nav>
+        <!-- Fin de la Barre de navigation-->
+
+        <!--L'en tête-->
+        <header style="margin-top: -8%;">
+            <h1>Mes Animations</h1>
+        </header>
+        <!--Fin de L'en tête--> 
+    </section>
+
+    <section class="class">
+   <!--Body-->
+   <body>
+    <div class="wrapper" style="margin-top: -2%;">
+
+        <div class="video">
+
+           <video width="750" position="center" controls>
+              <source src="img\Vidéo 1.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video1">
+            <video width="750" position="center" controls>
+               <source src="img\video3.mp4" type="video/mp4">
+            </video>
+         </div>
+    
+    </div>
+    <div class="wrapper" style="margin-top: -2%; margin-left: 24px;">
+
+         <div class="video2" style="margin-right: 0px;">
+            <video width="750" position="absolute" controls>
+               <source src="img\video2.mp4" type="video/mp4">
+            </video>
+         </div>
+
+         <div class="video3">
+            <video width="750" position="center" controls>
+               <source src="img\video 4.mp4" type="video/mp4">
+            </video>
+         </div>
+
+    </div>
+    <div class="wrapper" style="margin-top: -2%;">
+
+         <div class="video4">
+            <video width="750" height="410" position="relative" controls>
+               <source src="img\video5.mp4" type="video/mp4">
+            </video>
+         </div>
+    </div>
+
+    <script type="text/javascript"> src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"</script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $(".images img").click(function() {
+                $(this).addClass("zoom");
+            });  
+
+            $(".images img").click(function(){ 
+               $(this).removeClass("zoom")
+            })
+        })
+    </script>
+   </body>
+</body>
+</html>
